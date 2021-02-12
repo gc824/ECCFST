@@ -2,62 +2,96 @@
 <html>
 
 <head>
-	<title>About me</title>
+    <title>About me</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+        
+        h1,
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+        
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+    </style>
 </head>
+
 <body>
-	<div>
+    <h1>Gagan Chhabra</h1>
+    <h2 style="text-align:center">Full Stack Developer</h2>
+    <img src="Me.jpg" alt="My picture" width="300" height="500">
+    <p>I'm originally from <b>Queens, NY</b> and moved to <b>Buffalo, NY</b> in 2015.<br>
+        <p>
+            <ul>
+                <li>Since moving to Buffalo I must say, I had some of the best wings since I moved here.
+                    <a href="https://www.duffswings.com">Wings</a>
+                </li>
+                <li>On the flip side I still think NYC has the best pizza, in my opinion.:)
+                    <a href="https://www.yelp.com/biz/amore-pizzeria-flushing">Pizza</a>
+                </li>
+                <li>Know it's crazy, but I love to eat and try new food everywhere I go.😀
+                </li>
+            </ul>
+            <table>
+                <thead>
+                    <th>Symbol</th>
+                    <th>Price</th>
+                    <th>52 week High</th>
+                    <th>52 week Low</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>APPL</td>
+                        <td>$135</td>
+                        <td>145</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>AMZN</td>
+                        <td>3300</td>
+                        <td>3552</td>
+                        <td>1626</td>
+                    </tr>
+                    <tr>
+                        <td>BAC</td>
+                        <td>32</td>
+                        <td>35</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div name=links>
+                <a href="https://www.yahoo.com/" target="_blank">Yahoo</a>
+                <br />
+                <a href="https://miro.medium.com/max/1000/0*wZAcNrIWFFjuJA78" target="_blank">Wall-E</a>
+            </div>
+            <div name=images>
+                <img src="Rocks.jpg" alt="Rocks" width="300" height="500">
+            </div>
+            <div>
+                <form method="post" name="Form">
+                    <input type="text" name="first" placeholder="First_name"><br>
+                    <input type="text" name="last" placeholder="Last_name"><br>
+                    <input type="text" name="number" placeholder="Number"><br>
+                    <input type="text" name="email" placeholder="email_address"><br>
+                    <input type="submit" name="submit- btn" value="Submit">
+                </form>
+            </div>
+            <?php
+if (isset($_POST ['submit-btn'])) {
+	$first =$_POST['First_name'];
+	$last =$_POST['Last_name'];
+	$number =$_POST['Number'];
+	$email =$_POST['email_address'];
+	echo "<p>Full name entered:" . $First_name .' ' .$Last_name . "</p>";
 
-	</div>
-	<h1>Gagan Chhabra</h1>
-	<h2 style="text-align:center">Full Stack Developer</h2>
-	<img src="Me.jpg" alt="My picture" width="300" height="500">
-	<p>I'm originally from <b>Queens, NY</b> and moved to <b>Buffalo, NY</b> in 2015.<br>
-
-	<p>
-	<ul>
-		<li>Since moving to Buffalo I must say, I had some of the best wings since I moved here.
-			<a href="https://www.duffswings.com">Wings</a>
-		</li>
-
-		<li>On the flip side I still think NYC has the best pizza, in my opinion.:)
-			<a href="https://www.yelp.com/biz/amore-pizzeria-flushing">Pizza</a>
-		</li>
-
-		<li> Know it's crazy, but I love to eat and try new food everywhere I go.
-		</li>
-
-	</ul>
-	<table>
-		<thead>
-			<th>Player</th>
-			<th>Team</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Manning</td>
-				<td>Giants</td>
-			</tr>
-			<tr>
-				<td>Rodgers</td>
-				<td>Packers</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td>Allen</td>
-				<td>Bills</td>
-			</tr>
-		</tfoot>
-	</table>
-	<hr>
-	<div name=links>
-		<a href="https://www.yahoo.com/" target="_blank">yahoo</a>
-		<br />
-		<a href="https://miro.medium.com/max/1000/0*wZAcNrIWFFjuJA78" target="_blank">Walle</a>
-	</div>
-	<div name=images>
-		<img src="Rocks.jpg"alt="Rocks"width="300" height="500">
-		</div>
-	</p>
+} ?>
 </body>
+
 </html>
