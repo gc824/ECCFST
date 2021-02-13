@@ -26,7 +26,7 @@ echo "gatorade are $Color";
 echo "yellow are $noun";
 echo "name of the athlete $atheletename" 
 
-}?>
+?>
 
 </body>
 </html>
