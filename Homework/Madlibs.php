@@ -41,9 +41,9 @@
         } else {
             echo "<h3 style='color: red'> Please choose a athleteName</h3>";
         }
-        echo "gatorade are $color";
-        echo "yellow are $noun";
-        echo "name of the athlete $athleteName";
+        echo "gatorade are $color</br>";
+        echo "yellow are $noun</br>";
+        echo "name of the athlete $athleteName</br>";
     }
     ?>
 </body>

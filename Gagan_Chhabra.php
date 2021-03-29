@@ -1,3 +1,12 @@
+
+<?php
+ini_set('display_errors', 1);
+// call session_start so we can utilize the $_SESSION super global
+if (session_status() === PHP_SESSION_NONE) {
+	session_start();
+}
+?>
+
 <!doctype html>
 <html>
 
@@ -9,7 +18,7 @@
 <body>
     <h1>Gagan Chhabra</h1>
     <h2 style="text-align:center">Full Stack Developer</h2>
-    <img src="Me.jpg" alt="My picture" width="300" height="500">
+    <img src="img/Me.jpg" alt="My picture" width="300" height="500">
     <p>I'm originally from <b>Queens, NY</b> and moved to <b>Buffalo, NY</b> in 2015.<br>
         <p>
             <ul>
